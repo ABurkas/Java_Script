@@ -7,6 +7,7 @@ console.log(scoreEl)
 canvas.width = innerWidth
 canvas.height = innerHeight
 
+// wyznaczenie granic mapy
 class Boundary {
     static width = 40
     static height = 40
@@ -205,6 +206,7 @@ function createImage(src) {
     image.src = src
     return image
 }
+
 
 map.forEach((row, i) =>  {
     row.forEach((symbol, j) => {
@@ -468,15 +470,25 @@ function animate() {
 
             
             cancelAnimationFrame(animationId)
-            console.log('Przegrałeś!')
+            //console.log(Przegrałeś)
+            displayMessage('You lost! Try Again...')
             }
         }
     }
 
     // warunek zwyciestwa
     if (pellets.length === 0) {
-        console.log('Wygrałeś!!!')
+        //console.log('Wygrałeś!!!')
+        //cancelAnimationFrame(animationId)
         cancelAnimationFrame(animationId)
+        displayMessage("You Won!!! Congratulations!!!")
+    }
+
+    function displayMessage(message) {
+        c.font = "30px Arial";
+        c.fillStyle = "red";
+        c.textAlign = "center";
+        c.fillText(message, canvas.width / 2, canvas.height / 2);
     }
 
     // punkty mocy 
@@ -685,4 +697,5 @@ addEventListener('keyup', ({ key }) => {
             keys.d.pressed = false;
             break;
     }
+        
 });
