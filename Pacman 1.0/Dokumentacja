@@ -1,0 +1,49 @@
+Opis gry
+Ta gra jest prostą implementacją klasycznej gry Pac-Man, w której gracz kontroluje postać o nazwie "Player" i próbuje zdobyć jak najwięcej punktów, 
+jednocześnie unikając kontaktu z wrogimi postaciami o nazwie "Ghost". Gracz może zdobywać punkty poprzez zbieranie małych kulek reprezentowanych przez 
+obiekty klasy "Pellet". Dodatkowo, gra zawiera "PowerUp", którym gracz może zdobyć specjalną moc, która pozwala mu na tymczasowe przestraszenie duchów. 
+Celem gry jest zdobycie jak największej liczby punktów, unikając jednocześnie kontaktu z duchami.
+
+Struktura gry
+Główny plik gry zawiera kod JavaScript, który definiuje różne klasy i obiekty oraz implementuje logikę gry. Poniżej przedstawiam krótki opis każdej klasy:
+
+Boundary
+Klasa Boundary reprezentuje granice na planszy gry. Posiada pola takie jak position (pozycja), width (szerokość), 
+height (wysokość) oraz image (obrazek reprezentujący granicę). Metoda draw() rysuje granicę na canvasie.
+
+Player
+Klasa Player reprezentuje gracza. Posiada pola takie jak position (pozycja), velocity (prędkość), radius (promień), 
+radians (radiany), openRate (szybkość otwierania), rotation (rotacja). Metoda draw() rysuje gracza na canvasie, a metoda update() aktualizuje jego pozycję i animację.
+
+Ghost
+Klasa Ghost reprezentuje wrogie postacie, czyli duchy. Posiada pola takie jak position (pozycja), velocity (prędkość), 
+radius (promień), color (kolor), prevCollisions (poprzednie kolizje), speed (prędkość), scared (flaga, czy duch jest przestraszony). 
+Metoda draw() rysuje ducha na canvasie, a metoda update() aktualizuje jego pozycję.
+
+Pellet
+Klasa Pellet reprezentuje małe kule, które gracz może zbierać, aby zdobywać punkty. Posiada pola takie jak position (pozycja) i radius (promień). 
+Metoda draw() rysuje kulkę na canvasie.
+
+PowerUp
+Klasa PowerUp reprezentuje specjalny punkt mocy, który gracz może zdobyć. 
+Posiada pola takie jak position (pozycja) i radius (promień). Metoda draw() rysuje punkt mocy na canvasie.
+
+Inne zmienne i obiekty
+canvas: Obiekt reprezentujący płótno, na którym odbywa się rysowanie elementów gry.
+ctx: Kontekst rysowania na płótnie. Używany do wywoływania metod rysowania na płótnie.
+boundaries: Tablica przechowująca granice planszy gry.
+player: Obiekt reprezentujący gracza.
+ghosts: Tablica przechowująca obiekty duchów.
+pellets: Tablica przechowująca obiekty kulek.
+powerUp: Obiekt reprezentujący punkt mocy.
+score: Zmienna przechowująca aktualny wynik gracza.
+gameOver: Flaga informująca, czy gra się zakończyła.
+gameStarted: Flaga informująca, czy gra została rozpoczęta.
+powerUpActive: Flaga informująca, czy gracz posiada aktywny punkt mocy.
+
+Dodatkowo, w kodzie gry znajdują się funkcje obsługujące zdarzenia, takie jak keydown (przechwytuje naciśnięcie klawisza), 
+keyup (przechwytuje zwolnienie klawisza) oraz update (aktualizuje stan gry w każdej klatce).
+
+Gra działa na zasadzie wykrywania kolizji między obiektami, takimi jak gracz, duchy, granice planszy i kule. 
+Gracz może poruszać się po planszy za pomocą klawiszy strzałek, a duchy poruszają się automatycznie. Gdy gracz zbiera kulkę, zwiększa swoją punktację, 
+a gdy dotknie ducha, gra się kończy. Aktywowanie punktu mocy pozwala graczowi na chwilowe przestraszenie duchów, umożliwiając ucieczkę lub atak na nie.
