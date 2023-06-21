@@ -1,0 +1,36 @@
+Ta gra to klasyczna wersja Pac-Mana napisana w języku JavaScript. Gra odzwierciedla znane elementy oryginalnej gry, które sprawią, że będziesz mieć ochotę na nią zagrać.
+
+W grze znajdziesz charakterystycznego żółtego gracza, którym będziesz sterować. Twoim celem jest zbieranie białych kulek rozsianych po planszy. 
+Za każdą zebraną kulkę zdobywasz 10 punktów. Musisz jednak uważać na duchy, które poruszają się po planszy i będą próbowały cię złapać. Jeśli którykolwiek z duchów cię dotknie, 
+przegrasz grę.
+
+Aby ułatwić sobie zadanie, na planszy znajdują się również punkty mocy. Gdy zbierzesz taki punkt, duchy stają się przerażone i możesz je zjeść. 
+Każde zjedzone ducha przynosi ci dodatkowe punkty. Przerażone duchy będą się jednak po pewnym czasie odzyskiwać, więc musisz zagrać sprytnie, aby wykorzystać tę szansę.
+
+Plansza składa się z różnych elementów, takich jak ściany, przeszkody czy rożki. Musisz dobrze zaplanować swoje ruchy, aby uniknąć kolizji ze ścianami i przeszkodami, 
+a także unikać spotkania z duchami. Sterowanie postacią odbywa się za pomocą klawiszy W, A, S i D, które odpowiadają za ruch w górę, w lewo, w dół i w prawo.
+
+Gra posiada również system punktacji, który jest wyświetlany na ekranie. Możesz śledzić swoje postępy i starać się zdobyć jak najwięcej punktów. 
+Wygrana jest osiągalna, gdy zebrasz wszystkie białe kuleczki na planszy.
+
+Najlepsze strony tej gry to:
+
+Autentyczne odtworzenie: Gra Pac-Man została wiernie odtworzona, z zachowaniem charakterystycznych elementów takich jak kształt postaci Pac-Mana i duchów, 
+wygląd kropek oraz kształt granic planszy. To sprawia, że gra jest rozpoznawalna i dostarcza nostalgii dla fanów oryginalnej gry.
+
+Wyzwanie i strategia: Gra oferuje wyzwanie, ponieważ gracze muszą sprawnie manewrować postacią Pac-Mana po planszy, unikając duchów i zbierając kropki. 
+Dodatkowo, obecność punktów mocy daje graczowi okazję do odwrócenia sytuacji i ścigania duchów. Optymalne planowanie tras i szybkie podejmowanie decyzji są kluczowe dla osiągnięcia sukcesu.
+
+Interakcja z elementami planszy: Gracze mogą interakcjonować z różnymi elementami planszy, takimi jak granice, kropki i punkty mocy. Granice wymagają zręczności, 
+aby uniknąć kolizji, a zbieranie kropek i punktów mocy pozwala zdobywać punkty i kontrolować zachowanie duchów.
+
+Wyjątkowe cechy graficzne: Gra została wizualnie dostosowana do stylu Pac-Mana, używając kolorów i wzorów charakterystycznych dla oryginalnej gry. Wzory duchów, 
+ich zmieniający się kolor oraz wygląd kropek i punktów mocy są dobrze rozpoznawalne i dodają atrakcyjności wizualnej do rozgrywki.
+
+Prosta kontrola: Sterowanie postacią Pac-Mana odbywa się za pomocą klawiszy strzałek, co czyni grę łatwą do opanowania dla nowych graczy. 
+Intuicyjne poruszanie się po planszy pozwala skupić się na zabawie i strategicznym podejmowaniu decyzji.
+
+Ta wersja Pac-Mana napisana w JavaScript oferuje wszystkie znane elementy oryginalnej gry, takie jak sterowanie postacią, zdobywanie punktów, 
+unikanie duchów i wygrana po zebraniu wszystkich kul. 
+Jeśli jesteś fanem Pac-Mana lub po prostu chcesz spróbować tej klasycznej gry, ta implementacja z pewnością dostarczy ci wiele frajdy i wyzwań. 
+Czy jesteś gotowy, aby zostać mistrzem Pac-Mana?
